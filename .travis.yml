@@ -1,5 +1,5 @@
 osx_image: xcode611
 language: objective-c
 script:
-  - xctool -project ProfileKit.xcodeproj -scheme ProfileKit -sdk iphonesimulator
-  - xctool -project ProfileKit.xcodeproj test -scheme ProfileKit -sdk iphonesimulator
+  - xctool -scheme ProfileKit
+  - xctool test -scheme ProfileKit
