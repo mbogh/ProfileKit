@@ -10,7 +10,6 @@
 		16E3152200CE477B194C9AF0 /* Pods_ProfileKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5855005CF35FF12A9D14421A /* Pods_ProfileKitTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5A2837BB1A72CBC100C26117 /* ProfileKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2837BA1A72CBC100C26117 /* ProfileKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A2837C11A72CBC100C26117 /* ProfileKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2837B51A72CBC100C26117 /* ProfileKit.framework */; };
-		5A2837C81A72CBC100C26117 /* ProfileKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2837C71A72CBC100C26117 /* ProfileKitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +29,6 @@
 		5A2837BA1A72CBC100C26117 /* ProfileKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileKit.h; sourceTree = "<group>"; };
 		5A2837C01A72CBC100C26117 /* ProfileKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfileKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A2837C61A72CBC100C26117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A2837C71A72CBC100C26117 /* ProfileKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileKitTests.swift; sourceTree = "<group>"; };
 		61D790BF316596FE30ADE898 /* Pods-ProfileKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProfileKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProfileKitTests/Pods-ProfileKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		FD31E477E85B4BDCC8E4ADA8 /* Pods-ProfileKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProfileKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProfileKitTests/Pods-ProfileKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +101,6 @@
 		5A2837C41A72CBC100C26117 /* ProfileKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				5A2837C71A72CBC100C26117 /* ProfileKitTests.swift */,
 				5A2837C51A72CBC100C26117 /* Supporting Files */,
 			);
 			path = ProfileKitTests;
@@ -291,7 +288,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A2837C81A72CBC100C26117 /* ProfileKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
