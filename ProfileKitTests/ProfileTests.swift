@@ -22,6 +22,7 @@ class ProfileTests: QuickSpec {
                 let data = ["Name": name, "CreationDate": creationDate, "ExpirationDate": expirationDate]
                 let profile = Profile(filePath: filePath, data: data)
                 expect(profile).toNot(beNil())
+                expect(profile?.filePath).to(equal(filePath))
                 expect(profile?.name).to(equal(name))
                 expect(profile?.creationDate).to(equal(creationDate))
                 expect(profile?.expirationDate).to(equal(expirationDate))

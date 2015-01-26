@@ -9,7 +9,7 @@
 import Foundation
 
 public struct Profile {
-    let filePath: String
+    public let filePath: String
 
     public let name: String
     public let creationDate: NSDate
