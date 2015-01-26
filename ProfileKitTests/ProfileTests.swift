@@ -37,5 +37,31 @@ class ProfileTests: QuickSpec {
                 expect(profile).to(beNil())
             }
         }
+
+        describe("status") {
+            it("is expired when current date is later than expirationDate") {
+                let filePath = "/dev/null"
+                let name = "profile-1"
+                let creationDate = NSDate()
+                let expirationDate = NSDate(timeIntervalSinceNow: -1)
+
+                let data = ["Name": name, "CreationDate": creationDate, "ExpirationDate": expirationDate]
+                let profile = Profile(filePath: filePath, data: data)
+
+                expect(profile?.status).to(equal(ProfileStatus.Expired))
+            }
+
+            it("is ok when current date is prior than expirationDate") {
+                let filePath = "/dev/null"
+                let name = "profile-1"
+                let creationDate = NSDate()
+                let expirationDate = NSDate(timeIntervalSinceNow: 1)
+
+                let data = ["Name": name, "CreationDate": creationDate, "ExpirationDate": expirationDate]
+                let profile = Profile(filePath: filePath, data: data)
+
+                expect(profile?.status).to(equal(ProfileStatus.OK))
+            }
+        }
     }
 }

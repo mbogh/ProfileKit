@@ -8,12 +8,22 @@
 
 import Foundation
 
+public enum ProfileStatus {
+    case Expired
+    case OK
+
+}
+
 public struct Profile {
     public let filePath: String
 
     public let name: String
     public let creationDate: NSDate
     public let expirationDate: NSDate
+
+    public var status: ProfileStatus {
+        return (expirationDate.compare(NSDate()) != .OrderedDescending) ? .Expired : .OK
+    }
 
     /// Designated initializer
     public init?(filePath path: String, data: NSDictionary) {
