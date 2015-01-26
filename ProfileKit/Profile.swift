@@ -12,6 +12,12 @@ public enum ProfileStatus {
     case Expired
     case OK
 
+    var description: String {
+        switch self {
+        case .Expired: return "Expired"
+        case .OK: return "OK"
+        }
+    }
 }
 
 public struct Profile {
