@@ -51,6 +51,18 @@ class ProfileTests: QuickSpec {
                 expect(profile?.status).to(equal(ProfileStatus.Expired))
             }
 
+            it("is expired when current date is equal to expirationDate") {
+                let filePath = "/dev/null"
+                let name = "profile-1"
+                let creationDate = NSDate()
+                let expirationDate = NSDate()
+
+                let data = ["Name": name, "CreationDate": creationDate, "ExpirationDate": expirationDate]
+                let profile = Profile(filePath: filePath, data: data)
+
+                expect(profile?.status).to(equal(ProfileStatus.Expired))
+            }
+
             it("is ok when current date is prior than expirationDate") {
                 let filePath = "/dev/null"
                 let name = "profile-1"
