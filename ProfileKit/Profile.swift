@@ -27,6 +27,9 @@ public struct Profile {
     public let creationDate: NSDate
     public let expirationDate: NSDate
 
+    public let teamName: String?
+    public let teamID: String?
+
     public var status: ProfileStatus {
         return (expirationDate.compare(NSDate()) != .OrderedDescending) ? .Expired : .OK
     }
@@ -42,5 +45,8 @@ public struct Profile {
         name = data["Name"] as String
         creationDate = data["CreationDate"] as NSDate
         expirationDate = data["ExpirationDate"] as NSDate
+
+        teamName = data["TeamName"] as? String
+        teamID = bind(data["TeamIdentifier"]) { teamIdentifiers in (teamIdentifiers as [String]).first }
     }
 }

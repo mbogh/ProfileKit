@@ -75,5 +75,39 @@ class ProfileTests: QuickSpec {
                 expect(profile?.status).to(equal(ProfileStatus.OK))
             }
         }
+
+        describe("team") {
+            var data: [String: AnyObject]!
+            let filePath = "/dev/null"
+            beforeEach {
+                let name = "profile-1"
+                let creationDate = NSDate()
+                let expirationDate = NSDate()
+
+                data = ["Name": name, "CreationDate": creationDate, "ExpirationDate": expirationDate]
+            }
+
+            it("has team id if present in plist") {
+                let teamID = "01234X"
+                data["TeamIdentifier"] = [teamID]
+                let profile = Profile(filePath: filePath, data: data)
+
+                expect(profile?.teamID).to(equal(teamID))
+            }
+
+            it("has team name if present in plist") {
+                let teamName = "Team A"
+                data["TeamName"] = teamName
+                let profile = Profile(filePath: filePath, data: data)
+
+                expect(profile?.teamName).to(equal(teamName))
+            }
+
+            it("has neither if missing") {
+                let profile = Profile(filePath: filePath, data: data)
+                expect(profile?.teamID).to(beNil())
+                expect(profile?.teamName).to(beNil())
+            }
+        }
     }
 }
