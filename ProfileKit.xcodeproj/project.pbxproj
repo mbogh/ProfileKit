@@ -13,6 +13,8 @@
 		5A2837D41A74242800C26117 /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2837D31A74242800C26117 /* ProfileTests.swift */; };
 		5A2837D61A74F32200C26117 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2837D51A74F32200C26117 /* Profile.swift */; };
 		5A6E212B1A76E05200CB9D15 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E212A1A76E05200CB9D15 /* Extensions.swift */; };
+		5A6E21531A780B9800CB9D15 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E21521A780B9800CB9D15 /* ProfileManager.swift */; };
+		5A6E21551A780BC600CB9D15 /* ProfileManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E21541A780BC600CB9D15 /* ProfileManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		5A2837D31A74242800C26117 /* ProfileTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
 		5A2837D51A74F32200C26117 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		5A6E212A1A76E05200CB9D15 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5A6E21521A780B9800CB9D15 /* ProfileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		5A6E21541A780BC600CB9D15 /* ProfileManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileManagerTests.swift; sourceTree = "<group>"; };
 		61D790BF316596FE30ADE898 /* Pods-ProfileKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProfileKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProfileKitTests/Pods-ProfileKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		FD31E477E85B4BDCC8E4ADA8 /* Pods-ProfileKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProfileKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProfileKitTests/Pods-ProfileKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +96,7 @@
 			children = (
 				5A6E212A1A76E05200CB9D15 /* Extensions.swift */,
 				5A2837D51A74F32200C26117 /* Profile.swift */,
+				5A6E21521A780B9800CB9D15 /* ProfileManager.swift */,
 				5A2837BA1A72CBC100C26117 /* ProfileKit.h */,
 				5A2837B81A72CBC100C26117 /* Supporting Files */,
 			);
@@ -110,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				5A2837C51A72CBC100C26117 /* Supporting Files */,
+				5A6E21541A780BC600CB9D15 /* ProfileManagerTests.swift */,
 				5A2837D31A74242800C26117 /* ProfileTests.swift */,
 			);
 			path = ProfileKitTests;
@@ -291,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A2837D61A74F32200C26117 /* Profile.swift in Sources */,
+				5A6E21531A780B9800CB9D15 /* ProfileManager.swift in Sources */,
 				5A6E212B1A76E05200CB9D15 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A2837D41A74242800C26117 /* ProfileTests.swift in Sources */,
+				5A6E21551A780BC600CB9D15 /* ProfileManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
